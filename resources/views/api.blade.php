@@ -21,8 +21,8 @@
                                 <label for="" class="col-sm-4 col-form-label">ID</label>
                                 <div class="col-sm-1"></div>
                                 <div class="col-sm-4">
-                                    <input type="number" value="{{ $item -> type }}">
-                                    <input type="number" value="{{ $item -> links}}">
+                                    <input type="number" value="{{ $item['type'] }}">
+                                    <input type="number" value="{{ $item['links']}}">
                                 </div>
                                 <div class="col-sm-2"></div>
                             </div>

@@ -14,8 +14,8 @@ class HomeController extends Controller
         //$usuarios = HTTP::get('https://jsonplaceholder.typicode.com/users');
         //$usuarios = HTTP::get('https://mindicador.cl/api');
         $usuarios = HTTP::get('https://kitsu.io/api/edge/anime');
-        
-        $showArray = $usuarios->json();
+        $info = $usuarios->json();
+        $showArray = $info['data'];
         return view('api')->with('showArray',$showArray);
     }
 }
