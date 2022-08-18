@@ -13,6 +13,12 @@
 <body>
     <div class="container fluid">
         <div class="row"></div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 style="text-align: center;">Marvel API</h3>
+            </div>
+        </div>
         <br><br><br>
         <div class="row">
             @foreach ($showArray as $item)
@@ -27,6 +33,8 @@
                                     {{ $item['id'] }}
                                 </div>
                                 <div class="col-sm-2"></div>
+                            </div>
+                            <div class="row mb-3">
                                 <div class="col-sm-1"></div>
                                 <label for="" class="col-sm-4 col-form-label">Name</label>
                                 <div class="col-sm-1"></div>
@@ -34,6 +42,8 @@
                                     {{ $item['name'] }}
                                 </div>
                                 <div class="col-sm-2"></div>
+                            </div>
+                            <div class="row mb-3">
                                 <div class="col-sm-1"></div>
                                 <label for="" class="col-sm-4 col-form-label">Description</label>
                                 <div class="col-sm-1"></div>
@@ -41,8 +51,42 @@
                                     {{ $item['description'] }}
                                 </div>
                                 <div class="col-sm-2"></div>
-
-
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-1"></div>
+                                <label for="" class="col-sm-4 col-form-label">Modified</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-4">
+                                    {{ $item['modified'] }}
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-1"></div>
+                                <label for="" class="col-sm-4 col-form-label">Comics Availables</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-4">
+                                    {{ $item['comics']['available'] }}
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-1"></div>
+                                <label for="" class="col-sm-4 col-form-label">Series Availables</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-4">
+                                    {{ $item['series']['available'] }}
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-1"></div>
+                                <label for="" class="col-sm-4 col-form-label">Stories Available</label>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-4">
+                                    {{ $item['stories']['available'] }}
+                                </div>
+                                <div class="col-sm-2"></div>
                             </div>
                         </div>
                     </div>
